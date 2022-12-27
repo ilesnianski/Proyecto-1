@@ -47,8 +47,8 @@ void SysTick_DelayTicks(uint32_t n)
  */
 int main(void)
 {
-	/*Hago una modificacion del codigo*/
-	 GPIO_PortInit(GPIO, BOARD_LED_PORT);
+	/*Hago otra modificacion del codigo*/
+
     /* Init output LED GPIO. */
     GPIO_PortInit(GPIO, BOARD_LED_PORT);
     /* Board pin init */
@@ -65,8 +65,8 @@ int main(void)
 
     while (1)
     {
-        /* Delay 1000 ms */
-        SysTick_DelayTicks(1000U);
+        /* Delay 500 ms */
+        SysTick_DelayTicks(500U);
         GPIO_PortToggle(GPIO, BOARD_LED_PORT, 1u << BOARD_LED_PIN);
     }
 }
