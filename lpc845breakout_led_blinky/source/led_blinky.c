@@ -47,6 +47,8 @@ void SysTick_DelayTicks(uint32_t n)
  */
 int main(void)
 {
+	/*Hago una modificacion del codigo*/
+	 GPIO_PortInit(GPIO, BOARD_LED_PORT);
     /* Init output LED GPIO. */
     GPIO_PortInit(GPIO, BOARD_LED_PORT);
     /* Board pin init */
